@@ -1,4 +1,4 @@
-# Recommender-System
+# Graph-based recommender-system
 
 This repo are an attempt to implementing and *improving* the *Bourhim et al. (2018)*'s graph-based collaborative filtering approach for recommendation systems (GBCF-RS) $^{[1]}$.
 
