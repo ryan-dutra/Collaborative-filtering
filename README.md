@@ -1,6 +1,6 @@
 # Graph-based recommender-system
 
-This repo are an attempt to implementing and *improving* the *Bourhim et al. (2018)*'s graph-based collaborative filtering approach for recommendation systems (GBCF-RS) $^{[1]}$.
+This project are an attempt to implementing and *improving* the *Bourhim et al. (2018)*'s graph-based collaborative filtering approach for recommendation systems (GBCF-RS) $^{[1]}$.
 
 Additionally, it also aims to delves deeper into some specific steps of the proposed pipeline to investigating how algorithmic variations can impact the recommender overall performance -- similarlly to what was done in *Bouhim et al. (2019)* $^{[2]}$. However, a biggest range of algorithmic variations is going to be implemented compared with the cited work.
 Finally, experiment on new open datasets will be executed to compare the efficiency and performance in various scenarios of data volume.
@@ -20,9 +20,9 @@ The Bouhrim's approach for improving the accuracy of hybrid approaches takes int
 
 ***Steps needed for implementing Bouhrim's GBCF:***
 
-*   **Step 1:** Create a Homophily network based on similarity measures (using the jaccard similarity index);
-*   **Step 2:** Identify the communities in the Homophily network (using the Louvain algorithm);
-*   **Step 3:** Identify the key nodes per community (using centrality measures);
+*   **Step 1:** Create a homophily network based on similarity measures;
+*   **Step 2:** Identify the communities in the homophily network;
+*   **Step 3:** Identify the key nodes per community;
 *   **Step 4:** Profile the key node per community;
 *   **Step 5:** Computing recommendations for community users.
 
