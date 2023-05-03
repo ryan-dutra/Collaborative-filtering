@@ -1,6 +1,7 @@
 pandas ==  1.4.3
 numpy == 1.23.0 
-scikit-learn == 1.1.2
+tabulate == 0.9.0
+scikit-learn == 1.2.2
+scikit-surprise
 cdlib
 networkx == 2.8.5
-scikit-surprise
