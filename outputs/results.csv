@@ -1,0 +1,7 @@
+dataset,similarity_metric,community_detector,algorithm_rec,test_size,split_id,rmse
+ml-100k,cosine,,SVD,0.25,1,0.9375479054277986
+ml-100k,cosine,,SVD,0.25,2,0.9463118160539074
+ml-100k,cosine,,SVD,0.25,3,0.9446309543074046
+jester,cosine,,SVD,0.25,1,4.468319821552538
+jester,cosine,,SVD,0.25,2,4.472875275468748
+jester,cosine,,SVD,0.25,3,4.470972247814235
