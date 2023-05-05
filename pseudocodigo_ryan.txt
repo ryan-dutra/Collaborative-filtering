@@ -1,0 +1,22 @@
+para cada dataset de (Movielens 100k, Jester, [sintéticos]):
+	para cada medida_sim em ['l1', 'l2', 'cosine']:
+		para metodo_dc em [None, louvain, paris, surprise_communities]:
+			para metodo_rec em [SVD, k-NN, NMF, Co-Clustering]:
+				para test_size em (25%, 10%, 1%):
+					divsão train-test: ShuffleSplit, com n_splits=100
+					
+					usar dados de treino para estabelecer grafo de similaridade entre usuários
+					rodar metodo_dc em grafo de similaridades
+					para cada comunidade:
+						treinar uma instancia do metodo_rec
+						
+					para cada par usuário-item dos dados de teste:
+						identificar a comunidade a qual o usuário pertence
+						buscar a recomendação para o item na comunidade do usuário
+						
+					registrar o rmse das predições feitas para os dados de teste
+					
+
+					
+Saida: dataframe com colunas
+dataset, medida_sim, metodo_dc, metodo_rec, test_size, split_num, rmse
