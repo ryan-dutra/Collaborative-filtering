@@ -1,7 +1,5 @@
-dataset,similarity_metric,community_detector,algorithm_rec,test_size,split_id,rmse
-ml-100k,cosine,,SVD,0.25,1,0.9375479054277986
-ml-100k,cosine,,SVD,0.25,2,0.9463118160539074
-ml-100k,cosine,,SVD,0.25,3,0.9446309543074046
-jester,cosine,,SVD,0.25,1,4.468319821552538
-jester,cosine,,SVD,0.25,2,4.472875275468748
-jester,cosine,,SVD,0.25,3,4.470972247814235
+dataset,similarity_metric,community_detector,algorithm_rec,test_size,split_id,rmse,mse,mae
+ml-100k,cosine,Not-Applicable,SVD,0.25,1,0.933604622355991,0.8716175908844725,0.737595077084863
+ml-100k,cosine,Not-Applicable,SVD,0.25,2,0.9385266968169614,0.8808323606381567,0.7395483104885617
+ml-100k,cosine,Louvain,SVD,0.25,1,1.1257384577360796,1.2672870752260073,0.9439751289245157
+ml-100k,cosine,Louvain,SVD,0.25,2,1.128951928066983,1.2745324558861584,0.9470689203156925
