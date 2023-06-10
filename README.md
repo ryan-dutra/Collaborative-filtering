@@ -28,13 +28,8 @@ Please refer to the individual code files for more detailed instructions on runn
 ## Contact Information
 For any inquiries or questions regarding the repository or the article, please contact the authors:
 
-**Ryan Dutra de Abreu**
-**Email:** ryan.abreu@aluno.cefet-rj.br
-
-**Laura Silva de Assis**
-**Email:** laura.assis@cefet-rj.br
-
-**Douglas O. Cardoso**
-**Email:** douglas.cardoso@ipt.pt
+* Ryan Dutra de Abreu (ryan.abreu@aluno.cefet-rj.br)
+* Laura Silva de Assis (laura.assis@cefet-rj.br)
+* Douglas O. Cardoso (douglas.cardoso@ipt.pt)
 
 We appreciate any feedback or contributions to this research project.
