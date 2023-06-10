@@ -1,35 +1,40 @@
-# Graph-based recommender-system
+# Overview
 
-This project are an attempt to implementing and *improving* the *Bourhim et al. (2018)*'s graph-based collaborative filtering approach for recommendation systems (GBCF-RS) $^{[1]}$.
+This repository contains all the source code used for the experiments and analyses presented in the article titled "Experimental Analysis of Pipelining Community Detection and Recommender Systems," which was submitted to the 26th International Conference on Discovery Science.
 
-Additionally, it also aims to delves deeper into some specific steps of the proposed pipeline to investigating how algorithmic variations can impact the recommender overall performance -- similarlly to what was done in *Bouhim et al. (2019)* $^{[2]}$. However, a biggest range of algorithmic variations is going to be implemented compared with the cited work.
-Finally, experiment on new open datasets will be executed to compare the efficiency and performance in various scenarios of data volume.
-
-
-***Bouhrim's work proposal:*** 
-
-The Bouhrim's approach for improving the accuracy of hybrid approaches takes into account the following assumptions: 
-* (1) A user-base is a network of highly similar sub-communities. Any inference should be made on these communities’ level rather than on the whole user-base; and
-* (2) Some users are more embedded in this Homophilous communities than others. Inferring recommendations from keynodes rather than similar users can lead to more accurate results.
-
-***Incorporated concepts:***
-
-* (1) User-based collaborative filtering;
-* (2) Community detection;
-* (3) Key nodes identification. ;
-
-***Steps needed for implementing Bouhrim's GBCF:***
-
-*   **Step 1:** Create a homophily network based on similarity measures;
-*   **Step 2:** Identify the communities in the homophily network;
-*   **Step 3:** Identify the key nodes per community;
-*   **Step 4:** Profile the key node per community;
-*   **Step 5:** Computing recommendations for community users.
+This work investigated how community detection may lead to better recommendations than those obtained without awareness of implicit communities in the context of recommender systems.
+We experimentally assessed various combinations of methods for community detection and recommendation algorithms, as well as synthetic and real datasets.
+This targeted to unveil interesting patterns in the behavior of the resulting systems.
+Our results show that insights into communities can significantly improve both the effectiveness and efficiency of recommendation algorithms in some favorable scenarios. 
+These findings can be used to help data science researchers and practitioners to better understand the benefits and limitations of this methodology.
 
 
+## Repository Structure
+The repository is structured as follows:
+* `/notebooks`:  This directory contains all the Jupyter Notebooks needed to execute and evaluate the experiments.
+* `/outputs`:  It stores the results obtained from running the experiments in a `.csv` file format. 
+* `/plots`: It stores all the plots generated during the evaluation
 
+## Usage
+To reproduce the experiments conducted in the article, follow these steps:
+1. Clone the repository: `git clone https://github.com/ryan-dutra/Recommender-System.git`
+2. Install the required dependencies listed in `requirements.txt`
+3. Navigate to the `/notebooks` directory and run the `experiments_runner.ipynb` script
+4. The experiment will generate results, which will be stored in the `/outputs` directory. Two CSV files will be generated: `experiment_results.csv`, containing information related to the RMSE of each execution, and `experiment_runs_cost.csv`, containing information about the runtime for training and testing.
+5. Navigate to the `/notebooks` dictory and run the `summarization_of_error.ipynb` and `summarization_of_cost.ipynb` to obtain an graph view of performance and efficiency reached in the experiments.
 
+Please refer to the individual code files for more detailed instructions on running specific experiments.
 
-<font size="2">**[1]** BOURHIM, Sofia; BENHIBA, Lamia; IDRISSI, MA Janati. **Towards a Novel Graph-based collaborative filtering approach for recommendation systems**. In: Proceedings of the 12th International Conference on Intelligent Systems: Theories and Applications. 2018. p. 1-6. Available in  https://dl.acm.org/doi/abs/10.1145/3289402.3289524</font> 
+## Contact Information
+For any inquiries or questions regarding the repository or the article, please contact the authors:
 
-<font size="2">**[2]** BOURHIM, Sofia; BENHIBA, Lamia; IDRISSI, MA Janati. Investigating algorithmic variations of an RS Graph-based collaborative filtering approach. In: Proceedings of the ArabWIC 6th Annual International Conference Research Track. 2019. p. 1-6. Available in  https://dl.acm.org/doi/abs/10.1145/3333165.3333177</font> 
+**Ryan Dutra de Abreu**
+**Email:** ryan.abreu@aluno.cefet-rj.br
+
+**Laura Silva de Assis**
+**Email:** laura.assis@cefet-rj.br
+
+**Douglas O. Cardoso**
+**Email:** douglas.cardoso@ipt.pt
+
+We appreciate any feedback or contributions to this research project.
