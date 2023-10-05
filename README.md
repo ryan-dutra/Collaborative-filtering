@@ -8,7 +8,7 @@ This targeted to unveil interesting patterns in the behavior of the resulting sy
 Our results show that insights into communities can significantly improve both the effectiveness and efficiency of recommendation algorithms in some favorable scenarios. 
 These findings can be used to help data science researchers and practitioners to better understand the benefits and limitations of this methodology.
 
-For further developments in this research topic, please refer to our other repository, [`recsys4communities`]((https://github.com/moretoknow/recsys4communities)).
+For further developments in this research topic, please refer to our other repository, [recsys4communities]((https://github.com/moretoknow/recsys4communities)).
 
 
 ## Repository Structure
