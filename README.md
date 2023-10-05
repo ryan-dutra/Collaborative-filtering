@@ -1,12 +1,14 @@
 # Overview
 
-This repository contains all the source code used for the experiments and analyses presented in the article titled "Experimental Analysis of Pipelining Community Detection and Recommender Systems," which was submitted to the 26th International Conference on Discovery Science.
+This repository contains all the source code used for the experiments and analyses presented in the article titled "Experimental Analysis of Pipelining Community Detection and Recommender Systems", which was submitted to and accepted by the International Conference on Web Information Systems and Technologies (WEBIST 2023).
 
 This work investigated how community detection may lead to better recommendations than those obtained without awareness of implicit communities in the context of recommender systems.
 We experimentally assessed various combinations of methods for community detection and recommendation algorithms, as well as synthetic and real datasets.
 This targeted to unveil interesting patterns in the behavior of the resulting systems.
 Our results show that insights into communities can significantly improve both the effectiveness and efficiency of recommendation algorithms in some favorable scenarios. 
 These findings can be used to help data science researchers and practitioners to better understand the benefits and limitations of this methodology.
+
+For further developments in this research topic, please refer to our other repository, [`recsys4communities`]((https://github.com/moretoknow/recsys4communities)).
 
 
 ## Repository Structure
